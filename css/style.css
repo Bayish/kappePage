@@ -1,0 +1,636 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    background: #fff;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.sidebar {
+    background: #242b2e;
+    color: #6b7072;
+    text-align: center;
+    border-right: 1px solid #666666;
+    box-shadow: 0 2px 33px 13px #666666;
+    z-index: 1;
+}
+
+.header {
+    background: #fff;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 19px;
+}
+
+.header a {
+    text-decoration: none;
+}
+.header span {
+    display: block;
+    line-height: 36px;
+}
+
+.header span i {
+    writing-mode: tb-rl;
+    transform: rotate(180deg);
+    font-style: normal;
+}
+.header .logo {
+    color: #c1c1c1;
+}
+.header .main-logo {
+    color: #323f48;
+    font-size: 48px;
+    margin-right: 25px;
+    letter-spacing: 2.5px;
+}
+
+
+
+.input-top{
+    position: relative;
+    background: transparent;
+    margin-left: -500px;
+}
+
+.input-top::before {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: 222px;
+    width: 15px;
+    height: 15px;
+    border-style: solid;
+    border-width: 15px 15px 0 15px;
+    border-color: #fff transparent transparent transparent;
+    transform: translate(50%, 50%);
+}
+
+.input-top:checked +ul{
+    height: 350px;
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+    height: 0;
+    overflow: hidden;
+    transition: height 3s;
+    text-align: right;
+}
+
+.main-nav li {
+    height: 62px;
+    background: linear-gradient(to bottom, #313a3f 0%, #2e353b 100% );
+}
+
+.main-nav li:hover {
+    background: linear-gradient(to bottom, #2ebcbe 0%, #15a19e 100% );
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #fff;
+    line-height: 65px;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding-right: 35px;
+}
+
+.filter-block {
+    text-align: right;
+    font-size: 16px;
+    margin-right: 33px;
+    border-bottom: 3px solid #262b2f;
+    padding-bottom: 43px;
+}
+
+.filter-block p{
+    color: #20b3ba;
+    font-size: 19px;
+    font-weight: 100;
+    position: relative;
+    padding: 26px 31px 0 30px;
+    margin-bottom: 10px;
+}
+
+.filter-block p::after {
+    content: "\f17a";
+    position: absolute;
+    font-family: "Font Awesome 5 Brands"; 
+    color: #20b3ba;
+    top: 49%;
+    right: 0;
+}
+
+.filter-block label {
+    font-size: 13px;
+}
+
+.filter-block .filter-item {
+    margin-bottom: 7px;
+}
+
+.filter-block input{
+    visibility: hidden;
+}
+
+.filter-block input:checked +label {
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.footer {
+    border-top: 2px solid #24292d;
+}
+
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+    margin:0;
+}
+
+.footer-nav li {
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 5px;
+    padding-left: 2px;
+}
+
+.icons {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 1px;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+}
+
+.icons {
+    position: relative;
+}
+
+.ic-vk{
+    background: linear-gradient(to bottom, #fefefe 0%, #e0e1e3 100%);
+}
+
+.ic-vk:after {
+    content: "\f189";
+    font-family: "Font Awesome 5 Brands"; 
+    color: lightskyblue;
+    line-height: 24px;
+}
+.ic-google {
+    background: linear-gradient(to bottom, #da6c31 0%, #d23f1d 100%)
+}
+.ic-google:after {
+    content: "\f0d5";
+    font-family: "Font Awesome 5 Brands"; 
+    line-height: 24px;
+}
+.ic-tw {
+    background: linear-gradient(to bottom, #48cef4 0%, #2fa1df 100%)
+}
+.ic-tw:after {
+    content: "\f099";
+    font-family: "Font Awesome 5 Brands"; 
+    line-height: 24px;
+}
+
+.ic-mail {
+    background: linear-gradient(to bottom, #eb402e 0%, #c42c27 100%)
+}
+.ic-mail:after {
+    content: "@";
+    line-height: 24px;
+}
+
+.ic-ball {
+    background: linear-gradient(to bottom, #fa85cc 0%, #f74f9d 100%)
+}
+
+.ic-ball:after {
+    content:"\f17d";
+    font-family: "Font Awesome 5 Brands";
+    line-height: 24px;
+}
+
+.ic-be {
+    background: linear-gradient(to bottom, #49d3fa 0%, #2fa1df 100%)
+}
+.ic-be:after {
+    content: "\f1b4";
+    font-family: "Font Awesome 5 Brands"; 
+    line-height: 24px;
+}
+
+.ic-fb {
+    background: linear-gradient(to bottom, #406fb3 0%, #2e3d76 100%)
+}
+.ic-fb:after {
+    content: "\f39e";
+    font-family: "Font Awesome 5 Brands"; 
+    line-height: 24px;
+}
+
+.footer p {
+    font-size: 12px;
+    font-weight: 100;
+    color: #6b7072;
+    text-align: right;
+    padding: 9px 36px 0 0;
+}
+
+.gallery .box {
+    display: inline-block;
+    margin: -4px;
+    padding: 0;
+    width: 405px;
+    height: 311px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    overflow: hidden
+}
+
+.box-1{
+    margin: 0;
+}
+
+.box img {
+    height: 100%;
+    width: 100%;
+}
+
+
+.box p {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -24px;
+    left: 0;
+    background: rgba(45, 184, 183, 0.8);
+    font-size: 24px;
+    padding-top: 75px;
+}
+
+.box p span {
+    display: block;
+    border-bottom: 1px solid #fff;
+    font-size: 12px;
+    margin: 8px 147px;
+    padding-bottom: 15px;
+}
+
+.box p span::after {
+    content: "";
+    background: url(../images/drc.png)42% 50% no-repeat;
+    position: absolute;
+    width:60px;
+    height: 60px;
+    top: 51%;
+    left: 43%;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.box-1 p{
+    transform: translateY(400px);
+    transition: transform 2s;
+}
+
+.box-1  span {
+    transform: translateY(-800px);
+    transition: transform 2s;
+}
+
+.box-1 span::after {
+    transform: translateX(400px);
+    transition: transform 3s ;
+}
+
+.box-1:hover p{
+    transform: translateY(0);
+}
+
+.box-1:hover p span {
+    transform: translateY(0);
+}
+.box-1:hover span::after {
+    transform: translate(-30%, 54%);
+}
+
+.box-2 p{
+    transform: translateX(500px) rotate(45deg);
+    transition: transform 4s;
+}
+
+.box-2  span {
+    transform: translateY(400px) rotate(225deg);
+    transition: transform 4s;
+}
+
+.box-2 span::after {
+    transform: translateX(-500px) rotate(45deg);
+    transition: transform 5s ;
+}
+
+.box-2:hover p{
+    transform: translateX(0);
+}
+
+.box-2:hover p span {
+    transform:translateY(0);
+}
+.box-2:hover span::after {
+    transform: translate(-30%, 54%);
+}
+
+.box-3 p{
+    transform: scale(100);
+    transition: transform 4s ease-in, background 3s;
+    background: transparent;
+}
+
+.box-3  span {
+    transform: scale(100);
+    transition: transform 4s;
+}
+
+.box-3 span::after {
+    transform: translateY(-500px);
+    transition: transform 5s ;
+}
+
+.box-3:hover p{
+    transform: scale(1);
+    background: rgba(45, 184, 183, 0.8)
+}
+
+.box-3:hover p span {
+    transform:scale(1);
+}
+.box-3:hover span::after {
+    transform: translate(-30%, 54%);
+}
+
+.box-4 p{
+    transform: translateY(400px);
+    transition: transform 2s;
+}
+
+.box-4  span {
+    transform: translateY(-800px);
+    transition: transform 2s;
+}
+
+.box-4 span::after {
+    transform: translateX(400px);
+    transition: transform 3s ;
+}
+
+.box-4:hover p{
+    transform: translateY(0);
+}
+
+.box-4:hover p span {
+    transform: translateY(0);
+}
+.box-4:hover span::after {
+    transform: translate(-30%, 54%);
+}
+
+.box-5 p{
+    transform: translateX(500px) rotate(45deg);
+    transition: transform 4s;
+}
+
+.box-5  span {
+    transform: translateY(400px) rotate(225deg);
+    transition: transform 4s;
+}
+
+.box-5 span::after {
+    transform: translateX(-500px) rotate(45deg);
+    transition: transform 5s ;
+}
+
+.box-5:hover p{
+    transform: translateX(0);
+}
+
+.box-5:hover p span {
+    transform:translateY(0);
+}
+.box-5:hover span::after {
+    transform: translate(-30%, 54%);
+}
+
+.box-6 p{
+    transform: scale(100);
+    transition: transform 4s ease-in, background 3s;
+    background: transparent;
+}
+
+.box-6  span {
+    transform: scale(100);
+    transition: transform 4s;
+}
+
+.box-6 span::after {
+    transform: translateY(-500px);
+    transition: transform 5s ;
+}
+
+.box-6:hover p{
+    transform: scale(1);
+    background: rgba(45, 184, 183, 0.8)
+}
+
+.box-6:hover p span {
+    transform:scale(1);
+}
+.box-6:hover span::after {
+    transform: translate(-30%, 54%);
+}
+
+.box-7 p{
+    transform: translateY(400px);
+    transition: transform 2s;
+}
+
+.box-7  span {
+    transform: translateY(-800px);
+    transition: transform 2s;
+}
+
+.box-7 span::after {
+    transform: translateX(400px);
+    transition: transform 3s ;
+}
+
+.box-7:hover p{
+    transform: translateY(0);
+}
+
+.box-7:hover p span {
+    transform: translateY(0);
+}
+.box-7:hover span::after {
+    transform: translate(-30%, 54%);
+}
+
+.box-8 p{
+    transform: translateX(500px) rotate(45deg);
+    transition: transform 4s;
+}
+
+.box-8  span {
+    transform: translateY(400px) rotate(225deg);
+    transition: transform 4s;
+}
+
+.box-8 span::after {
+    transform: translateX(-500px) rotate(45deg);
+    transition: transform 5s ;
+}
+
+.box-8:hover p{
+    transform: translateX(0);
+}
+
+.box-8:hover p span {
+    transform:translateY(0);
+}
+.box-8:hover span::after {
+    transform: translate(-30%, 54%);
+}
+
+.box-9 p{
+    transform: scale(100);
+    transition: transform 4s ease-in, background 3s;
+    background: transparent;
+}
+
+.box-9  span {
+    transform: scale(100);
+    transition: transform 4s;
+}
+
+.box-9 span::after {
+    transform: translateY(-500px);
+    transition: transform 5s ;
+}
+
+.box-9:hover p{
+    transform: scale(1);
+    background: rgba(45, 184, 183, 0.8)
+}
+
+.box-9:hover p span {
+    transform:scale(1);
+}
+.box-9:hover span::after {
+    transform: translate(-30%, 54%);
+}
+
+.box-10 p{
+    transform: translateY(400px);
+    transition: transform 2s;
+}
+
+.box-10  span {
+    transform: translateY(-800px);
+    transition: transform 2s;
+}
+
+.box-10 span::after {
+    transform: translateX(400px);
+    transition: transform 3s ;
+}
+
+.box-10:hover p{
+    transform: translateY(0);
+}
+
+.box-10:hover p span {
+    transform: translateY(0);
+}
+.box-10:hover span::after {
+    transform: translate(-30%, 54%);
+}
+
+.box-11 p{
+    transform: translateX(500px) rotate(45deg);
+    transition: transform 4s;
+}
+
+.box-11  span {
+    transform: translateY(400px) rotate(225deg);
+    transition: transform 4s;
+}
+
+.box-11 span::after {
+    transform: translateX(-500px) rotate(45deg);
+    transition: transform 5s ;
+}
+
+.box-11:hover p{
+    transform: translateX(0);
+}
+
+.box-11:hover p span {
+    transform:translateY(0);
+}
+.box-11:hover span::after {
+    transform: translate(-30%, 54%);
+}
+
+.box-12 p{
+    transform: scale(100);
+    transition: transform 4s ease-in, background 3s;
+    background: transparent;
+}
+
+.box-12  span {
+    transform: scale(100);
+    transition: transform 4s;
+}
+
+.box-12 span::after {
+    transform: translateY(-500px);
+    transition: transform 5s ;
+}
+
+.box-12:hover p{
+    transform: scale(1);
+    background: rgba(45, 184, 183, 0.8)
+}
+
+.box-12:hover p span {
+    transform:scale(1);
+}
+.box-12:hover span::after {
+    transform: translate(-30%, 54%);
+}
+
+
+
+
+
+
+
